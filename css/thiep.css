@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+img {
+	width: 100%;
+	border: 5px solid green;
+}
+@keyframes title {
+	0% {background-color: pink; color: blue; opacity: 1;}
+	24% {opacity: 0;}
+	25% {background-color: white; color: red; opacity: 1;}
+	49% {opacity: 0;}
+	50% {background-color: black; color: white; opacity: 1;}
+	74% {opacity: 0;}
+	75% {background-color: violet; color: yellow; opacity: 1;}
+	95% {opacity: 0;}
+}
+p {
+	font-size: 50px;
+	text-align: center;
+	color: blue;
+	border: 3px solid yellow;
+	padding: 10px;
+	animation: title 10s infinite;
+	opacity: 1;
+}

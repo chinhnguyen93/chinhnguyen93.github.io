@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+table{
+	background-color: #808080;
+	margin: auto;
+	margin-top: 50px;
+	padding: 10px;
+}
+#input{
+	width: 200px;
+	height: 40px;
+}
+.btn{
+	width: 36px;
+	height: 36px;
+}
+#equal{
+	
+}
+#zero{
+	width: 76px;
+}
