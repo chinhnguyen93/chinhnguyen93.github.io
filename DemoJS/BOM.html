@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BOM</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
+		<script src="js/javascript.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<textarea id="input"></textarea>
+			<ul>
+				<li><input type="radio" name="ra1" value=1 />A: <b id="ans1"></b></li><br/>
+				<li><input type="radio" name="ra1" value=2 />B: <b id="ans2"></b></li><br/>
+				<li><input type="radio" name="ra1" value=3 />C: <b id="ans3"></b></li><br/>
+				<li><input type="radio" name="ra1" value=4 />D: <b id="ans4"></b></li><br/>
+				<button id="btn" onclick="next()">Câu tiếp</button>
+			</ul>	
+			
+		</div>
+		
+		<script>
+			var h=0;
+			var k=0;
+		  var mang=[cau1,cau2,cau3,cau4,cau5,cau6,cau7,cau8,cau9,cau10,cau11,cau12,cau13,cau14,cau15,cau16,cau17,cau18,cau19,cau20];
+		 var i=1;
+			function cau_hoi(x){
+				document.getElementById("input").value = x.cauhoi;
+				document.getElementById("ans1").innerHTML = x.ans1;
+				document.getElementById("ans2").innerHTML = x.ans2;
+				document.getElementById("ans3").innerHTML = x.ans3;
+				document.getElementById("ans4").innerHTML = x.ans4;
+			}
+			cau_hoi(mang[0]);
+			function next(){
+					var radio = document.getElementsByName("ra1");
+					check();
+					if(i==20){
+						if(k==20){
+							window.location.assign("congrate.html");
+						}
+						return alert("Bạn trả lời đúng "+k+" câu");
+					}
+					cau_hoi(mang[i]);
+					for (var j = 0; j < radio.length ; j++) {
+						radio[j].checked = false;
+					}
+					
+					
+					
+				i++;
+			}
+			function check(){
+				var h=i-1;
+				var y = document.getElementsByName("ra1");
+					if(h<20){
+					for(var j=0;j<y.length;j++){
+						if(y[j].checked==true && mang[h].da==y[j].value){
+							console.log(y[j].checked==true && mang[h].da==y[j].value);
+							k++;
+							break;
+						}
+					}	
+				}
+				return k;
+			}
+			
+			
+		</script>
+		
+	</body>
+</html>
