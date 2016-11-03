@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo Bootstrap</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Đảm bảo việc render và chạm phóng to, thêm thẻ meta viewport vào thẻ head -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+			body{
+				background-color: #e9eaea;
+			}	
+			.thumbnail{
+				box-shadow: 5px 5px 5px #888888;
+				margin: 0 10px;
+			}
+		</style>
+	</head>
+	<body> 
+		<header class="container con1">
+		<div class="header">
+			<div class="row">
+				<nav class="navbar navbar-default">
+		
+				      <ul class="nav navbar-nav navbar-right">
+				        <a href="signin.html"><button type="submit" class="btn btn-default">Đăng nhập</button></a>
+				        <a href="signup.html"><button type="submit" class="btn btn-default">Đăng ký</button></a>
+				      </ul>
+
+				</nav>
+			</div>
+			<div id="tittle"> 
+				<h1 >Learning-technology</h1>
+			</div>
+
+			<div class="row">
+				<div class="col-md-9 col-xs-7">
+					<nav class="navbar navbar-default">
+				  	<div class="container-fluid">
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav navbar-left">
+					        <li><a href="home.html">Trang chủ <span class="sr-only">(current)</span></a></li>
+					        <li><a href="code.html">Code</a></li>
+					        <li><a href="jobs.html">Việc làm</a></li>
+					 
+					      </ul>
+					      	
+					    </div><!-- /.navbar-collapse -->
+				  	</div><!-- /.container-fluid -->
+					</nav>
+				</div>
+
+				<div class="col-md-3 col-xs-5">
+					<nav class="navbar navbar-default" style="margin-right: 20px">
+		
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><input type="text" class="form-control" placeholder="Search"></li>
+				      </ul>
+				</nav>
+				</div>
+			</div>
+
+
+			
+		</div>
+		</header>
+
+
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="row user">
+							<div class="col-md-4 col-xs-2">
+								<img src="img/user.jpg" class="img-responsive">
+							</div>
+							<div class="col-md-8 col-xs-10">
+								<h4 style="color: #fff; margin-top: 30%; margin-left: 10px;">Nguyễn Đình Chính</h4>
+							</div>
+						</div>
+
+						<div class="row">
+							<a href="#">
+								<div class="col-md-12 list">
+									Khóa học của tôi
+								</div>
+							</a>
+						</div>
+
+						<div class="row">
+							<a href="#">
+								<div class="col-md-12 list">
+									Thông báo
+								</div>
+							</a>
+						</div>
+
+						<div class="row">
+							<a href="user.html">
+								<div class="col-md-12 list">
+									Hồ sơ cá nhân
+								</div>
+							</a>
+						</div>
+
+						<div class="row">
+							<a href="#">
+								<div class="col-md-12 list">
+									Lịch sử giao dịch
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-9">
+						<div class="row">
+							<h2>Hồ sơ cá nhân</h2>
+						</div>
+						<div class="row" style="background-color: #fff">
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Ảnh đại diện</p>
+								</div>
+								<div class="col-md-9">
+									
+								</div>
+							</div>
+
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Email</p>
+								</div>
+								<div class="col-md-9">
+									<input type="email" class="form-control" value="ndchinh93@gmail.com">
+								</div>
+							</div>
+
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Mật khẩu</p>
+								</div>
+								<div class="col-md-9">
+									<input type="password" class="form-control" value="12345678">
+								</div>
+							</div>
+
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Số điện thoại</p>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" value="0987563493">
+								</div>
+							</div>
+
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Địa chỉ thường trú</p>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" value="Hà Tây">
+								</div>
+							</div>
+
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Tên ngân hàng</p>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" value="Việt Tin Banh">
+								</div>
+							</div>
+
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Số tài khoản NH</p>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" value="711Axxxxxxxx">
+								</div>
+							</div>
+
+							<div class="row bor">
+								<div class="col-md-3">
+									<p>Họ và tên</p>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" value="Nguyễn Đình Chính">
+								</div>
+							</div>
+							
+							<div class="row" style="padding-left: 20px;">
+								<button type="submit" class="btn btn-info">Lưu thông tin</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<footer>
+			<div class="container con5">
+				<div class="row" style="background-image: url('img/footer.png'); padding-top: 50px;padding-bottom: 50px;padding-left: 10px; ">
+					<div class="col-md-6 col-xs-12" style="color: white">
+						<h2>Beginner’s Guide to Web Development</h2>
+						<p>Our guide explains the basics of web development and points you in the right direction based on your goals.</p>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<img src="img/img5.png">
+					</div>
+				</div>
+				<div class="row" style="background-color: #2d3033">
+					<div class="col-md-12 col-xs-12" style="color: white; padding: 5px;">
+						<div class="col-md-4 col-xs-12">
+							<h3>Technology</h3>
+							<br/>
+							<br/>
+							<div class="row">
+								<div class="col-md-2">
+								</div>
+								<div class="col-md-2 col-xs-4">
+									<img src="img/facebook.png" style="width: 60px" />
+								</div>
+								<div class="col-md-2 col-xs-4">
+									<img src="img/youtube.png" style="width: 60px" />
+								</div>
+								<div class="col-md-2 col-xs-4">
+									<img src="img/twitter.png" style="width: 60px" />
+								</div>
+								<div class="col-md-3">
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<h3>Liên hệ</h3>
+							<br/>
+							<br/>
+							<p style="text-align: center;">Ms Thủy: 0988790953</p>
+							<p style="text-align: center;">Ms Trang: 0912200970</p>
+							<p style="text-align: center;">Email: technology@gmail.com</p>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<h3>Thanh toán</h3>
+							<br/>
+							<br/>
+							<p style="text-align: center;">Chuyển khoản: 711A57655972</p>
+							<p style="text-align: center;">Thanh toán tại nhà</p>
+							<p style="text-align: center;">Thanh toán tại Technology</p>
+						</div>
+					</div>
+				</div>
+			</div><!--container-->
+		</footer>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$('.navbar-toggle').on('click', function(){
+					if(!$('#tittle').hasClass('hidden')){
+						$('#tittle').addClass('hidden');
+					} else {
+						$('#tittle').removeClass('hidden');
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
